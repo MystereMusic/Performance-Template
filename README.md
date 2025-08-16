@@ -14,9 +14,9 @@
 - [Bome Project](./Performance%20Template%20Live.bmtp)
 
 ## Requirements
-- Elektron Digitakt + Digitone
-- Bome MIDI Translator Pro
-- Novation Launch Control XL MK3
+- Elektron Digitakt 2 + Digitone 2, with midi track setted up so track 15 & 16 are off, CH15 controls FX 
+- Bome MIDI Translator Pro, with NO direct midi routing inside the Bome Midi Router (Very Important)
+- Novation Launch Control XL MK3, you can change colors and position off the CCs, but keep the same CC Values or it won't work !
 
 ## Installation
 1. Load the LCXL template (`Perf. Template.syx`) with Novation Components.
