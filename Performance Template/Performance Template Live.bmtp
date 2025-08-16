@@ -1,0 +1,681 @@
+; ------- Bome MIDI Translator: signed project file
+; ------- You can modify this file as you like, but that will invalidate the
+; ------- signature so that it cannot be opened in the BomeBox or MT Player anymore.
+;
+[MIDI.routes]
+Routes=<MIDIRoutes><Route Disabled="Y"><From Name="USB-MIDI" Type="in"/><To Name="Elektron Digitone II" Type="out"/></Route></MIDIRoutes>
+
+[Preset.0]
+Active=1
+Comments=
+Incoming0=EnDi02
+Incoming1=EnDi02
+Incoming2=EnDi02
+Incoming3=EnDi02
+Incoming4=EnDi02
+Incoming5=EnDi02
+Name=Init
+Name0=Init Reverb / Delay Values DN et DT
+Name1=Init Reverb / Delay Variables
+Name2=Init Filters LCXL
+Name3=Init Flags
+Name4=Init All Digitakt
+Name5=Init All Digitone
+Options0=Actv01Stop00OutO00Dlay200:Millis
+Options1=Actv01Stop00OutO00StMa0000000Dlabel000D__cmt>//Delaygj=50gk=50gl=30label0006__cmt>label002B__log>Delay : FB %gj% / HPF %gk% / LPF %gl%label0006__cmt>label000E__cmt>//Reverbgm=50gn=45go=35label0006__cmt>label002E__log>Reverb : Size %gm% / HPF %gn% / LPF %go%
+Options2=Actv01Stop00OutO00Dlay200:Millis
+Options3=Actv01Stop00OutO00StMa0000001Clabel0011__cmt>//filter LPze=0label0011__cmt>//filter HPzg=0label0017__cmt>//drums filter LPzm=0label0011__cmt>//filter HPzn=0label0006__cmt>label0010__cmt>//drum SRRzh=0label0006__cmt>label0013__cmt>//Bass Filterzl=0label0006__cmt>label0019__cmt>//Synth A DT filterzo=0label0019__cmt>//Synth B Dt Filterzp=0label0019__cmt>//Synth A DN Filterzq=0label0019__cmt>//Synth B DN Filterzr=0label0006__cmt>label0016__cmt>//Vocal A Filterzs=0label0016__cmt>//Vocal B Filterzt=0
+Options4=Actv01Stop00OutO00
+Options5=Actv01Stop00OutO00
+Outgoing0=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port><Port>Elektron Digitakt II</Port></Ports><Raw>//DELAY&#10;&#10;//FB&#10;BE 18 32&#10;//HP&#10;BE 19 32&#10;//LP&#10;BE 1A 1E&#10;&#10;//REVERB&#10;&#10;//SIZE&#10;BE 1E 32&#10;//HP&#10;BE 5B 2D&#10;//LP&#10;BE 1B 23</Raw></Outgoing>
+Outgoing1=None
+Outgoing2=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>//DELAY&#10;//FB&#10;B1 19 32&#10;//HP&#10;B1 1A 32&#10;//LP&#10;B1 1B 1E&#10;&#10;//REVERB&#10;//SIZE&#10;B0 19 32&#10;//HP&#10;B0 1A 2D&#10;//LP&#10;B1 1B 23&#10;&#10;//DJ Filter LP&#10;B0 1E 7F&#10;//Drums Filter LP&#10;B0 13 7F&#10;&#10;//SRR Drums &#10;B1 07 00&#10;&#10;//Bass Filter&#10;B0 04 00&#10;&#10;//Synth A DT Filter&#10;B1 05 00&#10;&#10;//Synth B DT Filter&#10;B1 06 00&#10;&#10;//Synth A Dn Filter&#10;B0 05 00&#10;&#10;//Synth B Dn Filter&#10;B0 06 00&#10;&#10;// Vocal A &#10;B0 08 00&#10;&#10;//Vocal B &#10;B1 09 00&#10;&#10;//SRR ALL&#10;B0 11 00&#10;&#10;//MW ALL&#10;B0 01 00&#10;&#10;//AT ALL&#10;B0 03 00&#10;&#10;//Wash&#10;B0 14 00</Raw></Outgoing>
+Outgoing3=None
+Outgoing4=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//Kick&#10;// Mute Reset&#10;B0 5E 00&#10;&#10;//BC Reset&#10;B0 02 00&#10;&#10;//DJ FILTER LPF&#10;B0 1A 00&#10;&#10;//DJ FILTER HPF&#10;B0 1B 7F&#10;&#10;// MW Reset&#10;B0 01 00&#10;&#10;// SRR Reset&#10;B0 37 00&#10;&#10;&#9;//Bass&#10;//Filter Reset&#10;D8 00&#10;&#10;// Mute Reset&#10;B8 5E 00&#10;&#10;//BC Reset&#10;B8 02 00&#10;&#10;//DJ FILTER LPF&#10;B8 1A 00&#10;&#10;//DJ FILTER HPF&#10;B8 1B 7F&#10;&#10;// MW Reset&#10;B8 01 00&#10;&#10;// SRR Reset&#10;B8 37 00&#10;&#10;&#9;//Drums&#10;//SRR Reset&#10;D1 00&#10;D2 00&#10;D3 00&#10;D4 00&#10;D5 00&#10;D6 00&#10;D7 00&#10;&#10;//Drums Mute&#10;B1 5E 00&#10;B2 5E 00 &#10;B3 5E 00&#10;B4 5E 00&#10;B5 5E 00&#10;B6 5E 00&#10;&#10;//DJ FILTER LPF&#10;B1 1B 7F&#10;B2 1B 7F&#10;B3 1B 7F&#10;B4 1B 7F&#10;B5 1B 7F&#10;B6 1B 7F&#10;B7 1B 7F&#10;&#10;//DJ FILTER HPF&#10;&#10;B1 1A 00&#10;B2 1A 00&#10;B3 1A 00&#10;B4 1A 00&#10;B5 1A 00&#10;B6 1A 00&#10;B7 1A 00&#10;&#10;&#10;&#10;//BC Reset&#10;&#10;B1 02 00&#10;B2 02 00&#10;B3 02 00&#10;B4 02 00&#10;B5 02 00&#10;B6 02 00&#10;B7 02 00&#10;&#10;&#10;// MW Reset&#10;&#10;B1 01 00&#10;B2 01 00&#10;B3 01 00&#10;B4 01 00&#10;B5 01 00&#10;B6 01 00&#10;B7 01 00&#10;&#10;// SRR Reset&#10;B1 37 00&#10;B2 37 00&#10;B3 37 00&#10;B4 37 00&#10;B5 37 00&#10;B6 37 00&#10;B7 37 00&#10;&#10;//Synth &#10;// Mute Reset&#10;B9 5E 00&#10;BA 5E 00&#10;BB 5E 00&#10;&#10;//AT Reset &#10;D9 00&#10;DA 00 &#10;DB 00&#10;&#10;//BC Reset&#10;B9 02 00&#10;BA 02 00&#10;BB 02 00&#10;&#10;//DJ FILTER LPF&#10;B9 1A 00&#10;BA 1A 00&#10;BB 1A 00&#10;&#10;//DJ FILTER HPF&#10;B9 1B 7F&#10;BA 1B 7F&#10;BB 1B 7F&#10;&#10;// MW Reset&#10;B9 01 00&#10;BA 01 00&#10;BB 01 00&#10;&#10;// SRR Reset&#10;B9 37 00&#10;BA 37 00&#10;BB 37 00&#10;&#10;&#9;//Vocals&#10;// Mute Reset&#10;&#10;BC 5E 00&#10;BD 5E 00&#10;&#10;// AT Reset&#10;DC 00&#10;DD 00&#10;&#10;//DJ FILTER LPF&#10;BC 1B 7F&#10;BD 1B 7F&#10;&#10;&#10;//DJ FILTER HPF&#10;&#10;BC 1A 00&#10;BC 1A 00&#10;&#10;//BC Reset&#10;&#10;BC 02 00&#10;BD 02 00&#10;&#10;// MW Reset&#10;&#10;BC 01 00&#10;BD 01 00&#10;&#10;// SRR Reset&#10;BC 37 00&#10;BD 37 00&#10;&#10;//FX&#10;//Delay&#10;//Feedback&#10;BE 18 gj&#10;//HPF&#10;BE 19 gk&#10;//LPF&#10;BE 1A gl&#10;&#10;&#10;&#9;//Reverb&#10;//SIZE&#10;BE 1E gm&#10;//HPF&#10;BE 5A gn&#10;//LPF&#10;BE 5B go</Raw></Outgoing>
+Outgoing5=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>// Bass&#10;//BC Reset&#10;B0 02 00&#10;B8 02 00&#10;&#10;//DJ FILTER LPF&#10;B0 1B 00&#10;B8 1B 00&#10;&#10;//DJ FILTER HPF&#10;B0 1C 7F&#10;B8 1C 7F&#10;&#10;// MW Reset&#10;B0 01 00&#10;B8 01 00&#10;&#10;// SRR Reset&#10;B0 4F 00&#10;B8 4F 00&#10;&#10;// Mute Reset&#10;B0 5E 00&#10;B8 5E 00&#10;&#10;//AT Reset &#10;D8 00&#10;&#10;//Synth&#10;//BC Reset&#10;B1 02 00&#10;B2 02 00&#10;B3 02 00&#10;B4 02 00&#10;B5 02 00&#10;&#10;B9 02 00&#10;BA 02 00&#10;BB 02 00&#10;BC 02 00&#10;BD 02 00&#10;&#10;//DJ FIlter HPF Reset&#10;&#10;B1 1B 00&#10;B2 1B 00&#10;B3 1B 00&#10;B4 1B 00&#10;B5 1B 00&#10;B9 1B 00&#10;BA 1B 00&#10;BB 1B 00&#10;BC 1B 00&#10;BD 1B 00&#10;&#10;//DJ FIlter LPF Reset&#10;&#10;B1 1C 7F&#10;B2 1C 7F&#10;B3 1C 7F&#10;B4 1C 7F&#10;B5 1C 7F&#10;B9 1C 7F&#10;BA 1C 7F&#10;BB 1C 7F&#10;BC 1C 7F&#10;BD 1C 7F&#10;&#10;// MW Reset&#10;B1 01 00&#10;B2 01 00&#10;B3 01 00&#10;B4 01 00&#10;B5 01 00&#10;B9 01 00&#10;BA 01 00&#10;BB 01 00&#10;BC 01 00&#10;BD 01 00&#10;&#10;// SRR Reset&#10;B1 4F 00&#10;B2 4F 00&#10;B3 4F 00&#10;B4 4F 00&#10;B5 4F 00&#10;B9 4F 00&#10;BA 4F 00&#10;BB 4F 00&#10;BC 4F 00&#10;BD 4F 00&#10;&#10;//AT Reset &#10;D1 00&#10;D2 00&#10;D3 00&#10;D4 00&#10;D5 00&#10;D9 00&#10;DA 00&#10;DB 00&#10;DC 00&#10;DD 00&#10;&#10;// Mute Reset&#10;B1 5E 00&#10;B2 5E 00&#10;B3 5E 00&#10;B4 5E 00&#10;B5 5E 00&#10;&#10;&#10;B9 5E 00&#10;BA 5E 00&#10;BB 5E 00&#10;BC 5E 00&#10;BD 5E 00&#10;&#10;//Delay&#10;//Feedback&#10;BE 18 gj&#10;//HPF&#10;BE 19 gk&#10;//LPF&#10;BE 1A gl&#10;&#10;&#10;//Reverb&#10;//SIZE&#10;BE 1E gm&#10;//HPF&#10;BE 5A gn&#10;//LPF&#10;BE 5B go</Raw></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.1]
+Active=1
+Comments=
+DefaultOutPorts=MIDA00010014Elektron Digitakt II
+Incoming0=MID3<Incoming Action="MIDI"><Description>Kick Selector</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x25"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Description>Orange Mute</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x2A"/><Value2 var="qq" Type="SetVar"/></Simple></Incoming>
+Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x13"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x12"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming12=MID3<Incoming Action="MIDI"><Description>DJ Kill Rose</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x34"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming13=MID3<Incoming Action="MIDI"><Description>Kill All Red</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming14=MID3<Incoming Action="MIDI"><Description>Kill All Red</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming15=MID3<Incoming Action="MIDI"><Description>Kill All Red</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming16=MID3<Incoming Action="MIDI"><Description>Killer Orange</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x2E"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Description>Orange Mute</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x2A"/><Value2 var="qq" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Description>Fader Kick</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x15"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Description>SRR Red</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x11"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Description>MW All Vert</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x01"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming6=MID3<Incoming Action="MIDI"><Description>Att All Jaune</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x03"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming7=MID3<Incoming Action="MIDI"><Description>Wash Blanc</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x14"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming8=MID3<Incoming Action="MIDI"><Description>LP Orange</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x1E"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming9=MID3<Incoming Action="MIDI"><Description>HP Orange</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x1D"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Name=Kick
+Name0=Kick Selector
+Name1=Kick Mute
+Name10=DRUMS LP DT
+Name11=DRUMS HP DT
+Name12=Kill DJ Filter DT
+Name13=Kill All DT Kick Mute
+Name14=Kill All Feedback Kick
+Name15=Kill All DT Kick
+Name16=Drum Filter Killer
+Name2=Kick Mute DN Compressor
+Name3=Kick High Pass
+Name4=SRR Kick
+Name5=MW All Kick
+Name6=AT Kick
+Name7=BC/Wash Kick
+Name8=DJ LP DT
+Name9=DJ HP  DT
+Options0=Actv01Stop00OutO00StMa00000002ya=pplabel0006__cmt>
+Options1=Actv01Stop00OutO00StMa00000003label0006__cmt>label0006__cmt>label0006__cmt>
+Options10=Actv01Stop00OutO00StMa00000004if(im==ie)noexecuteim=ppzm=1label0006__cmt>
+Options11=Actv01Stop00OutO00StMa00000004if(in==if)noexecutein=ppzn=1label0006__cmt>
+Options12=Actv01Stop00OutO00StMa00000001if(ya==127)noexecute
+Options13=Actv01Stop00OutO00StMa00000002if(ya==127)noexecuteif(yg==127)noexecute
+Options14=Actv01Stop00OutO00StMa00000002if(ya==127)noexecuteif(yg==127)noexecute
+Options15=Actv01Stop00OutO00StMa00000001if(ya==127)noexecute
+Options16=Actv01Stop00OutO00StMa00000001if(ya==127)noexecute
+Options2=Actv01Stop00OutO00StMa00000003label0006__cmt>label0006__cmt>label0006__cmt>
+Options3=Actv01Stop00OutO00StMa00000002qq=pp*90qq=qq/127
+Options4=Actv01Stop00OutO00StMa00000002label0006__cmt>if(ya==127)noexecute
+Options5=Actv01Stop00OutO00StMa00000001if(ya==127)noexecute
+Options6=Actv01Stop00OutO00StMa00000003label0006__cmt>if(yf==127)skipif(ya==127)noexecute
+Options7=Actv01Stop00OutO00StMa00000001if(ya==127)noexecute
+Options8=Actv01Stop00OutO00StMa00000003if(ya==127)noexecuteie=ppze=1
+Options9=Actv01Stop00OutO00StMa00000003if(ya==127)noexecuteif=ppzf=1
+Outgoing0=None
+Outgoing1=MID2MIDA00010014Elektron Digitakt IIB05Eqq
+Outgoing10=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//Drums&#10;B0 1B im</Raw></Outgoing>
+Outgoing11=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//Drums&#10;B0 1A in</Raw></Outgoing>
+Outgoing12=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//DJ FILTER LPF&#10;&#10;B0 1A 00&#10;&#10;&#10;//DJ FILTER HPF&#10;B0 1B 7F</Raw></Outgoing>
+Outgoing13=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>// Mute Reset&#10;B0 5E 00</Raw></Outgoing>
+Outgoing14=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x2A"/><Value2 num="0x00"/></Simple></Outgoing>
+Outgoing15=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//BC Reset&#10;B0 02 00&#10;&#10;//DJ FILTER LPF&#10;B0 1A 00&#10;&#10;//DJ FILTER HPF&#10;B0 1B 7F&#10;&#10;// MW Reset&#10;B0 01 00&#10;&#10;// SRR Reset&#10;B0 37 00</Raw></Outgoing>
+Outgoing16=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>// HPF Killer&#10;B0 1A 00&#10;&#10;// LPF Killer&#10;B0 1B 7F</Raw></Outgoing>
+Outgoing2=MID2MIDA00010014Elektron Digitone IIB75Eqq
+Outgoing3=MID2MIDA00010014Elektron Digitakt IIB01Aqq
+Outgoing4=MID2MIDA00010014Elektron Digitakt IIB037pp
+Outgoing5=MID2MIDA00010014Elektron Digitakt IIB001pp
+Outgoing6=MID2MIDA00010014Elektron Digitakt IID0pp
+Outgoing7=MID2MIDA00010014Elektron Digitakt IIB002pp
+Outgoing8=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//kick&#10;B0 1B ie</Raw></Outgoing>
+Outgoing9=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//kick&#10;B0 1A if</Raw></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.2]
+Active=1
+Comments=
+DefaultOutPorts=MIDA0001000ELCXL3 1 MIDI 1
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x26"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x2C"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x14"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x04"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x04"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming13=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x1E"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming14=MID2MIDA0001000ELCXL3 1 MIDI 1B01Epp
+Incoming15=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x1D"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming16=MID2MIDA0001000ELCXL3 1 MIDI 1B01Dpp
+Incoming17=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x34"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming18=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x34"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming19=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x2C"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming20=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming21=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming22=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming23=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming24=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming25=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming26=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x15"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x15"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x11"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming6=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x11"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming7=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x01"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming8=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x01"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming9=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x14"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Name=Bass
+Name0=Bass Selector
+Name1=Bass Mute DN
+Name10=Bass Wash Up DN
+Name11=Bass AT DT
+Name12=Bass AT DN
+Name13=Bass DJ LP DT
+Name14=Bass DJ LP DN
+Name15=Bass DJ HP DT
+Name16=Bass DJ HP DN
+Name17=Bass Kill DJ Filter DN
+Name18=Bass Kill DJ Filter DT
+Name19=Kill All DT Bass
+Name2=Bass Mute DT
+Name20=Kill All DT Bass Mute
+Name21=Kill All DT Bass AT
+Name22=Kill All DN Bass
+Name23=Kill All DN Bass Mute
+Name24=Kill All DN Bass AT
+Name25=Led FB AT Bass
+Name26=Kill All Led FB Mute Bass
+Name3=Bass MW DN
+Name4=Bass MW DT
+Name5=SRR DN Bass
+Name6=SRR DT Bass
+Name7=Bass MW All DN
+Name8=Bass MW All DT
+Name9=Bass Wash Up DT
+Options0=Actv01Stop00OutO00StMa00000002yb=pplabel0006__cmt>
+Options1=Actv01Stop00OutO00StMa00000003qq=pplabel0006__cmt>label0006__cmt>
+Options10=Actv01Stop00OutO00StMa00000001if(yb==127)noexecute
+Options11=Actv01Stop00OutO00StMa00000003il=ppzl=1label0006__cmt>
+Options12=Actv01Stop00OutO00StMa00000002il=ppzl=1
+Options13=Actv01Stop00OutO00StMa00000004if(yb==127)noexecuteie=ppze=1label0006__cmt>
+Options14=Actv01Stop00OutO00StMa00000005if(yb==127)noexecutelabel0006__cmt>ie=ppze=1label0006__cmt>
+Options15=Actv01Stop00OutO00StMa00000003if(yb==127)noexecuteif=ppzf=1
+Options16=Actv01Stop00OutO00StMa00000003if(yb==127)noexecuteif=ppzf=1
+Options17=Actv01Stop00OutO00StMa00000001if(yb==127)noexecute
+Options18=Actv01Stop00OutO00StMa00000001if(yb==127)noexecute
+Options19=Actv01Stop00OutO00StMa00000002if(yb==127)noexecuteif(yf==127)noexecute
+Options2=Actv01Stop00OutO00StMa00000002qq=pplabel0006__cmt>
+Options20=Actv01Stop00OutO00StMa00000002if(yg==127)noexecuteif(yb==127)noexecute
+Options21=Actv01Stop00OutO00StMa00000003if(yf==127)noexecuteif(yf==127)skipif(yb==127)noexecute
+Options22=Actv01Stop00OutO00StMa00000001if(yb==127)noexecute
+Options23=Actv01Stop00OutO00StMa00000002if(yg==127)noexecuteif(yb==127)noexecute
+Options24=Actv01Stop00OutO00StMa00000003if(yf==127)noexecuteif(yf==127)skipif(yb==127)noexecute
+Options25=Actv01Stop00OutO00StMa00000002if(yf==127)noexecuteif(yb==127)noexecute
+Options26=Actv01Stop00OutO00StMa00000004if(yb==127)noexecuteif(yg==127)noexecutelabel0006__cmt>label0006__cmt>
+Options3=Actv01Stop00OutO00StMa00000001qq=pp
+Options4=Actv01Stop00OutO00StMa00000001qq=pp
+Options5=Actv01Stop00OutO00StMa00000001if(yb==127)noexecute
+Options6=Actv01Stop00OutO00StMa00000001if(yb==127)noexecute
+Options7=Actv01Stop00OutO00StMa00000002if(yb==127)noexecutelabel0006__cmt>
+Options8=Actv01Stop00OutO00StMa00000001if(yb==127)noexecute
+Options9=Actv01Stop00OutO00StMa00000002if(yb==127)noexecutelabel0006__cmt>
+Outgoing0=None
+Outgoing1=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>B0 5E qq&#10;B8 5E qq</Raw></Outgoing>
+Outgoing10=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>B0 02 pp&#10;B8 02 pp</Raw></Outgoing>
+Outgoing11=MID2MIDA00010014Elektron Digitakt IID8il
+Outgoing12=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>D8 il&#10;D0 il</Raw></Outgoing>
+Outgoing13=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//Bass&#10;B8 1B ie</Raw></Outgoing>
+Outgoing14=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>//Bass&#10;B0 1C ie&#10;B8 1C ie</Raw></Outgoing>
+Outgoing15=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//Bass&#10;B8 1A if</Raw></Outgoing>
+Outgoing16=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>//Bass&#10;B0 1B if&#10;B8 1B if</Raw></Outgoing>
+Outgoing17=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>//DJ FIlter HPF Reset&#10;B0 1B 00&#10;&#10;B8 1B 00&#10;&#10;&#10;//DJ FIlter LPF Reset&#10;B0 1C 7F&#10;&#10;B8 1C 7F</Raw></Outgoing>
+Outgoing18=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//DJ FILTER LPF&#10;&#10;B8 1A 00&#10;&#10;&#10;//DJ FILTER HPF&#10;&#10;B8 1B 7F</Raw></Outgoing>
+Outgoing19=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//BC Reset&#10;B8 02 00&#10;&#10;//DJ FILTER LPF&#10;B8 1A 00&#10;&#10;//DJ FILTER HPF&#10;B8 1B 7F&#10;&#10;// MW Reset&#10;B8 01 00&#10;&#10;// SRR Reset&#10;B8 37 00</Raw></Outgoing>
+Outgoing2=MID2MIDA00010014Elektron Digitakt IIB85Eqq
+Outgoing20=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>// Mute Reset&#10;B8 5E 00</Raw></Outgoing>
+Outgoing21=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//AT Reset &#10;D8 00</Raw></Outgoing>
+Outgoing22=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>//BC Reset&#10;B0 02 00&#10;B8 02 00&#10;&#10;//DJ FILTER LPF&#10;B0 1B 00&#10;B8 1B 00&#10;&#10;//DJ FILTER HPF&#10;B0 1C 7F&#10;B8 1C 7F&#10;&#10;// MW Reset&#10;B0 01 00&#10;B8 01 00&#10;&#10;// SRR Reset&#10;B0 4F 00&#10;B8 4F 00</Raw></Outgoing>
+Outgoing23=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>// Mute Reset&#10;B0 5E 00&#10;B8 5E 00</Raw></Outgoing>
+Outgoing24=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>//AT Reset &#10;D0 00&#10;D8 00</Raw></Outgoing>
+Outgoing25=MID2MIDA0001000ELCXL3 1 MIDI 1B00400
+Outgoing26=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x2C"/><Value2 num="0x00"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>B0 01 qq&#10;B8 01 qq</Raw></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Simple Type="ControlChange"><Channel num="8"/><Value1 num="0x01"/><Value2 var="qq"/></Simple></Outgoing>
+Outgoing5=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>B0 4F pp&#10;B8 4F pp</Raw></Outgoing>
+Outgoing6=MID2MIDA00010014Elektron Digitakt IIB837pp
+Outgoing7=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>B0 01 pp&#10;B8 01 pp</Raw></Outgoing>
+Outgoing8=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Simple Type="ControlChange"><Channel num="8"/><Value1 num="0x01"/><Value2 var="pp"/></Simple></Outgoing>
+Outgoing9=MID2MIDA00010014Elektron Digitakt IIB802pp
+PresetSwitchIgnore=0
+
+[Preset.3]
+Active=1
+Comments=
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x27"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x2B"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming10=MID2MIDA0001000ELCXL3 1 MIDI 1B01Epp
+Incoming11=MID2MIDA0001000ELCXL3 1 MIDI 1B01Dpp
+Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x34"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming13=MID3<Incoming Action="MIDI"><Description>Kill Orange</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x2E"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming14=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming15=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming16=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming17=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming18=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming19=MID3<Incoming Action="MIDI"><Description>LP DJ Rose</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x1E"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x16"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming20=MID3<Incoming Action="MIDI"><Description>HP DJ Rose</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x1D"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x11"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x01"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x07"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x14"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming7=MID3<Incoming Action="MIDI"><Description>LP Orange</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x13"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming8=MID3<Incoming Action="MIDI"><Description>HP Orange</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x12"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming9=MID3<Incoming Action="MIDI"><Description>Kill Orange</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x2E"/><Value2 num="0x7F"/></Simple></Incoming>
+Name=Drums
+Name0=Drums Selector
+Name1=Drums Mute
+Name10=Drums DJ LP DT
+Name11=Drums DJ HP DT
+Name12=DJ Filter Killer
+Name13=Led Feedback Kill Drum Filter
+Name14=Kill All Drums - Mute
+Name15=Kill All Led FB Mute Drums
+Name16=Led FB AT Drums
+Name17=Kill All AT (SRR)  Drums
+Name18=Kill All Drums
+Name19=Follow DJ Led Drums Filter LP
+Name2=Drums MW
+Name20=Follow DJ Led Drums Filter HP
+Name3=SRR DT Drums
+Name4=Drums All MW
+Name5=AT SRR CC7  Drums
+Name6=BC WASH Drums
+Name7=DRUMS LP DT
+Name8=DRUMS HP DT
+Name9=Drum Filter Killer
+Options0=Actv01Stop00OutO00StMa00000002yc=pplabel0006__cmt>
+Options1=Actv01Stop00OutO00StMa00000002qq=pplabel0006__cmt>
+Options10=Actv01Stop00OutO00StMa00000004if(yc==127)noexecuteie=ppze=1label0006__cmt>
+Options11=Actv01Stop00OutO00StMa00000003if(yc==127)noexecuteif=ppzf=1
+Options12=Actv01Stop00OutO00StMa00000001if(yc==127)noexecute
+Options13=Actv01Stop00OutO00
+Options14=Actv01Stop00OutO00StMa00000002if(yg==127)noexecuteif(yc==127)noexecute
+Options15=Actv01Stop00OutO00StMa00000004if(yg==127)noexecuteif(yc==127)noexecutelabel0006__cmt>label0006__cmt>
+Options16=Actv01Stop00OutO00StMa00000001label0006__cmt>
+Options17=Actv01Stop00OutO00StMa00000002label0006__cmt>label0006__cmt>
+Options18=Actv01Stop00OutO00StMa00000002if(yc==127)noexecutelabel0006__cmt>
+Options19=Actv01Stop00OutO00StMa00000002if(yc==127)noexecutelabel0006__cmt>
+Options2=Actv01Stop00OutO00StMa00000001qq=pp
+Options20=Actv01Stop00OutO00StMa00000001if(yc==127)noexecute
+Options3=Actv01Stop00OutO00StMa00000001if(yc==127)noexecute
+Options4=Actv01Stop00OutO00StMa00000001if(yc==127)noexecute
+Options5=Actv01Stop00OutO00StMa00000002ih=ppzh=1
+Options6=Actv01Stop00OutO00StMa00000001if(yc==127)noexecute
+Options7=Actv01Stop00OutO00StMa00000005im=ppzm=1label0006__cmt>label0006__cmt>label0006__cmt>
+Options8=Actv01Stop00OutO00StMa00000006in=ppzn=1label0006__cmt>label0006__cmt>label0006__cmt>label0006__cmt>
+Options9=Actv01Stop00OutO00StMa00000001label0006__cmt>
+Outgoing0=None
+Outgoing1=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>B1 5E qq&#10;B2 5E qq &#10;B3 5E qq&#10;B4 5E qq&#10;B5 5E qq&#10;B6 5E qq</Raw></Outgoing>
+Outgoing10=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>B1 1B ie&#10;B2 1B ie&#10;B3 1B ie&#10;B4 1B ie&#10;B5 1B ie&#10;B6 1B ie&#10;B7 1B ie</Raw></Outgoing>
+Outgoing11=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//Drums&#10;B1 1A if&#10;B2 1A if&#10;B3 1A if&#10;B4 1A if&#10;B5 1A if&#10;B6 1A if&#10;B7 1A if</Raw></Outgoing>
+Outgoing12=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//DJ FILTER LPF&#10;B1 1B 7F&#10;B2 1B 7F&#10;B3 1B 7F&#10;B4 1B 7F&#10;B5 1B 7F&#10;B6 1B 7F&#10;&#10;&#10;//DJ FILTER HPF&#10;&#10;B1 1A 00&#10;B2 1A 00&#10;B3 1A 00&#10;B4 1A 00&#10;B5 1A 00&#10;B6 1A 00&#10;B7 1A 00</Raw></Outgoing>
+Outgoing13=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>// Drum Filter&#10;B0 12 00&#10;B0 13 7F&#10;&#10;&#10;//SRR Killer&#10;B1 07 00</Raw></Outgoing>
+Outgoing14=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>// Mute Reset&#10;&#10;B1 5E 00&#10;B2 5E 00&#10;B3 5E 00&#10;B4 5E 00&#10;B5 5E 00&#10;B6 5E 00&#10;B7 5E 00</Raw></Outgoing>
+Outgoing15=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x2B"/><Value2 num="0x00"/></Simple></Outgoing>
+Outgoing16=MID2MIDA0001000ELCXL3 1 MIDI 1B10700
+Outgoing17=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>// AT Reset&#10;D1 00&#10;D2 00&#10;D3 00&#10;D4 00&#10;D5 00&#10;D6 00&#10;D7 00</Raw></Outgoing>
+Outgoing18=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//DJ FILTER LPF&#10;B1 1B 7F&#10;B2 1B 7F&#10;B3 1B 7F&#10;B4 1B 7F&#10;B5 1B 7F&#10;B6 1B 7F&#10;B7 1B 7F&#10;&#10;//DJ FILTER HPF&#10;&#10;B1 1A 00&#10;B2 1A 00&#10;B3 1A 00&#10;B4 1A 00&#10;B5 1A 00&#10;B6 1A 00&#10;B7 1A 00&#10;&#10;&#10;&#10;//BC Reset&#10;&#10;B1 02 00&#10;B2 02 00&#10;B3 02 00&#10;B4 02 00&#10;B5 02 00&#10;B6 02 00&#10;B7 02 00&#10;&#10;&#10;// MW Reset&#10;&#10;B1 01 00&#10;B2 01 00&#10;B3 01 00&#10;B4 01 00&#10;B5 01 00&#10;B6 01 00&#10;B7 01 00&#10;&#10;// SRR Reset&#10;B1 37 00&#10;B2 37 00&#10;B3 37 00&#10;B4 37 00&#10;B5 37 00&#10;B6 37 00&#10;B7 37 00</Raw></Outgoing>
+Outgoing19=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x13"/><Value2 var="ie"/></Simple></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>B1 01 qq&#10;B2 01 qq&#10;B3 01 qq&#10;B4 01 qq&#10;B5 01 qq&#10;B6 01 qq&#10;B7 01 qq</Raw></Outgoing>
+Outgoing20=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x12"/><Value2 var="if"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>B1 37 pp&#10;B2 37 pp&#10;B3 37 pp&#10;B4 37 pp&#10;B5 37 pp&#10;B6 37 pp&#10;B7 37 pp</Raw></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>B1 01 pp&#10;B2 01 pp&#10;B3 01 pp&#10;B4 01 pp&#10;B5 01 pp&#10;B6 01 pp&#10;B7 01 pp</Raw></Outgoing>
+Outgoing5=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>D1 ih&#10;D2 ih&#10;D3 ih&#10;D4 ih&#10;D5 ih&#10;D6 ih&#10;D7 ih</Raw></Outgoing>
+Outgoing6=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>B1 02 pp&#10;B2 02  pp&#10;B3 02  pp&#10;B4 02  pp&#10;B5 02  pp&#10;B6 02  pp&#10;B7 02  pp</Raw></Outgoing>
+Outgoing7=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//Drums&#10;B1 1B im&#10;B2 1B im&#10;B3 1B im&#10;B4 1B im&#10;B5 1B im&#10;B6 1B im&#10;B7 1B im</Raw></Outgoing>
+Outgoing8=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//Drums&#10;B1 1A in&#10;B2 1A in&#10;B3 1A in&#10;B4 1A in&#10;B5 1A in&#10;B6 1A in&#10;B7 1A in</Raw></Outgoing>
+Outgoing9=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>// HPF Killer&#10;B1 1A 00&#10;B2 1A 00&#10;B3 1A 00&#10;B4 1A 00&#10;B5 1A 00&#10;B6 1A 00&#10;&#10;// LPF Killer&#10;&#10;B1 1B 7F&#10;B2 1B 7F&#10;B3 1B 7F&#10;B4 1B 7F&#10;B5 1B 7F&#10;B6 1B 7F&#10;&#10;//Drums SRR Killer&#10;D1 00&#10;D2 00&#10;D3 00&#10;D4 00&#10;D5 00&#10;D6 00&#10;D7 00</Raw></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.4]
+Active=1
+Comments=
+Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x28"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x2D"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x11"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming11=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x01"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming12=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x01"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming13=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x03"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming14=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x03"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming15=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x14"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming16=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x14"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming17=MID2MIDA0001000ELCXL3 1 MIDI 1B01Epp
+Incoming18=MID2MIDA0001000ELCXL3 1 MIDI 1B01Epp
+Incoming19=MID2MIDA0001000ELCXL3 1 MIDI 1B01Dpp
+Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x2D"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming20=MID2MIDA0001000ELCXL3 1 MIDI 1B01Dpp
+Incoming21=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x34"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming22=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x34"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming23=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming24=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming25=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming26=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming27=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming28=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming29=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x17"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming30=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x17"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x05"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x06"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x05"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming8=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x06"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming9=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x11"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Name=Synth
+Name0=Synth Selector
+Name1=Synth Mute DN
+Name10=SRR Synth DT
+Name11=Synth MW All DN
+Name12=Synth MW All DT
+Name13=AT Synth All DT
+Name14=AT Synth All DN
+Name15=Wash DT Synth
+Name16=Wash DN Synth
+Name17=DJ LP DN Synth
+Name18=DJ LP DT Synth
+Name19=DJ HP DN Synth
+Name2=Synth Mute DT
+Name20=DJ HP DT Synth
+Name21=Kill DJ Filter DN Synth
+Name22=Kill DJ Filter DT Synth
+Name23=Kill All DT Synth
+Name24=Kill All DT Synth - AT
+Name25=Kill All DT Synth - Mutes
+Name26=Kill All DN Synth
+Name27=Kill All DN Synth - AT
+Name28=Kill All DN Synth - Mutes
+Name29=Kill All Led FB Mute Synth
+Name3=Synth MW DN
+Name30=Led FB AT Killer Synth
+Name4=Synth MW DT
+Name5=AT Synth A DT
+Name6=AT Synth B DT
+Name7=AT Synth A DN
+Name8=AT Synth B Dn
+Name9=SRR Synth DN
+Options0=Actv01Stop00OutO00StMa00000002yd=pplabel0006__cmt>
+Options1=Actv01Stop00OutO00StMa00000002qq=pplabel0006__cmt>
+Options10=Actv01Stop00OutO00StMa00000001if(yd==127)noexecute
+Options11=Actv01Stop00OutO00StMa00000001if(yd==127)noexecute
+Options12=Actv01Stop00OutO00StMa00000001if(yd==127)noexecute
+Options13=Actv01Stop00OutO00StMa00000001if(yd==127)noexecute
+Options14=Actv01Stop00OutO00StMa00000001if(yd==127)noexecute
+Options15=Actv01Stop00OutO00StMa00000001if(yd==127)noexecute
+Options16=Actv01Stop00OutO00StMa00000002if(yd==127)noexecutelabel0006__cmt>
+Options17=Actv01Stop00OutO00StMa00000003if(yd==127)noexecuteie=ppze=1
+Options18=Actv01Stop00OutO00StMa00000003if(yd==127)noexecuteie=ppze=1
+Options19=Actv01Stop00OutO00StMa00000003if(yd==127)noexecuteif=ppzf=1
+Options2=Actv01Stop00OutO00StMa00000002qq=pplabel0006__cmt>
+Options20=Actv01Stop00OutO00StMa00000003if(yd==127)noexecuteif=ppzf=1
+Options21=Actv01Stop00OutO00StMa00000001if(yd==127)noexecute
+Options22=Actv01Stop00OutO00StMa00000001if(yd==127)noexecute
+Options23=Actv01Stop00OutO00StMa00000002if(yd==127)noexecutelabel0006__cmt>
+Options24=Actv01Stop00OutO00StMa00000002if(yd==127)noexecuteif(yf==127)noexecute
+Options25=Actv01Stop00OutO00StMa00000002if(yd==127)noexecuteif(yg==127)noexecute
+Options26=Actv01Stop00OutO00StMa00000002if(yd==127)noexecutelabel0006__cmt>
+Options27=Actv01Stop00OutO00StMa00000002if(yd==127)noexecuteif(yf==127)noexecute
+Options28=Actv01Stop00OutO00StMa00000003if(yd==127)noexecuteif(yg==127)noexecutelabel0006__cmt>
+Options29=Actv01Stop00OutO00StMa00000004if(yg==127)noexecuteif(yd==127)noexecutelabel0006__cmt>label0006__cmt>
+Options3=Actv01Stop00OutO00StMa00000002qq=pplabel0006__cmt>
+Options30=Actv01Stop00OutO00StMa00000002if(yf==127)noexecuteif(yd==127)noexecute
+Options4=Actv01Stop00OutO00StMa00000003qq=pplabel0006__cmt>label0006__cmt>
+Options5=Actv01Stop00OutO00StMa00000002io=ppzo=1
+Options6=Actv01Stop00OutO00StMa00000002ip=ppzp=1
+Options7=Actv01Stop00OutO00StMa00000002iq=ppzq=1
+Options8=Actv01Stop00OutO00StMa00000002ir=ppzr=1
+Options9=Actv01Stop00OutO00StMa00000001if(yd==127)noexecute
+Outgoing0=None
+Outgoing1=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>B1 5E qq&#10;B2 5E qq&#10;B3 5E qq&#10;B4 5E qq&#10;B5 5E qq&#10;B9 5E qq&#10;BA 5E qq&#10;BB 5E qq&#10;BC 5E qq&#10;BD 5E qq</Raw></Outgoing>
+Outgoing10=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>B9 37 pp&#10;BA 37 pp&#10;BB 37 pp</Raw></Outgoing>
+Outgoing11=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>B1 01 pp&#10;B2 01 pp&#10;B3 01 pp&#10;B4 01 pp&#10;B5 01 pp&#10;B6 01 pp&#10;B7 01 pp&#10;B9 01 pp&#10;BA 01 pp&#10;BB 01 pp&#10;BC 01 pp&#10;BD 01 pp</Raw></Outgoing>
+Outgoing12=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>B9 01 pp&#10;BA 01 pp&#10;BB 01 pp</Raw></Outgoing>
+Outgoing13=MID2MIDA00010014Elektron Digitakt IIDBpp
+Outgoing14=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>D3 pp&#10;D4 pp&#10;D5 pp&#10;&#10;&#10;DB pp&#10;DC pp&#10;DD pp</Raw></Outgoing>
+Outgoing15=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>B9 02 pp&#10;BA 02 pp&#10;BB 02 pp</Raw></Outgoing>
+Outgoing16=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>B1 02 pp&#10;B2 02 pp&#10;B3 02 pp&#10;B4 02 pp&#10;B5 02 pp&#10;B9 02 pp&#10;BA 02 pp&#10;BB 02 pp&#10;BC 02 pp&#10;BD 02 pp</Raw></Outgoing>
+Outgoing17=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>B1 1C ie&#10;B2 1C ie&#10;B3 1C ie&#10;B4 1C ie&#10;B5 1C ie&#10;B9 1C ie&#10;BA 1C ie&#10;BB 1C ie&#10;BC 1C ie&#10;BD 1C ie</Raw></Outgoing>
+Outgoing18=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>B9 1B ie&#10;BA 1B ie&#10;BB 1B ie</Raw></Outgoing>
+Outgoing19=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>//Synth&#10;B1 1B if&#10;B2 1B if&#10;B3 1B if&#10;B4 1B if&#10;B5 1B if&#10;B9 1B if&#10;BA 1B if&#10;BB 1B if&#10;BC 1B if&#10;BD 1B if</Raw></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>B9 5E qq&#10;BA 5E qq&#10;BB 5E qq</Raw></Outgoing>
+Outgoing20=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//Synth&#10;B9 1A if&#10;BA 1A if&#10;BB 1A if</Raw></Outgoing>
+Outgoing21=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>//DJ FIlter HPF Reset&#10;&#10;B1 1B 00&#10;B2 1B 00&#10;B3 1B 00&#10;B4 1B 00&#10;B5 1B 00&#10;B9 1B 00&#10;BA 1B 00&#10;BB 1B 00&#10;BC 1B 00&#10;BD 1B 00&#10;&#10;//DJ FIlter LPF Reset&#10;&#10;B1 1C 7F&#10;B2 1C 7F&#10;B3 1C 7F&#10;B4 1C 7F&#10;B5 1C 7F&#10;B9 1C 7F&#10;BA 1C 7F&#10;BB 1C 7F&#10;BC 1C 7F&#10;BD 1C 7F</Raw></Outgoing>
+Outgoing22=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//DJ FILTER LPF&#10;&#10;B9 1A 00&#10;BA 1A 00&#10;BB 1A 00&#10;&#10;//DJ FILTER HPF&#10;&#10;B9 1B 7F&#10;BA 1B 7F&#10;BB 1B 7F</Raw></Outgoing>
+Outgoing23=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//BC Reset&#10;B9 02 00&#10;BA 02 00&#10;BB 02 00&#10;&#10;//DJ FILTER LPF&#10;B9 1A 00&#10;BA 1A 00&#10;BB 1A 00&#10;&#10;//DJ FILTER HPF&#10;B9 1B 7F&#10;BA 1B 7F&#10;BB 1B 7F&#10;&#10;// MW Reset&#10;B9 01 00&#10;BA 01 00&#10;BB 01 00&#10;&#10;// SRR Reset&#10;B9 37 00&#10;BA 37 00&#10;BB 37 00</Raw></Outgoing>
+Outgoing24=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//AT Reset &#10;D9 00&#10;DA 00 &#10;DB 00</Raw></Outgoing>
+Outgoing25=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>// Mute Reset&#10;B9 5E 00&#10;BA 5E 00&#10;BB 5E 00</Raw></Outgoing>
+Outgoing26=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>//BC Reset&#10;B1 02 00&#10;B2 02 00&#10;B3 02 00&#10;B4 02 00&#10;B5 02 00&#10;&#10;B9 02 00&#10;BA 02 00&#10;BB 02 00&#10;BC 02 00&#10;BD 02 00&#10;&#10;//DJ FIlter HPF Reset&#10;&#10;B1 1B 00&#10;B2 1B 00&#10;B3 1B 00&#10;B4 1B 00&#10;B5 1B 00&#10;B9 1B 00&#10;BA 1B 00&#10;BB 1B 00&#10;BC 1B 00&#10;BD 1B 00&#10;&#10;//DJ FIlter LPF Reset&#10;&#10;B1 1C 7F&#10;B2 1C 7F&#10;B3 1C 7F&#10;B4 1C 7F&#10;B5 1C 7F&#10;B9 1C 7F&#10;BA 1C 7F&#10;BB 1C 7F&#10;BC 1C 7F&#10;BD 1C 7F&#10;&#10;// MW Reset&#10;B1 01 00&#10;B2 01 00&#10;B3 01 00&#10;B4 01 00&#10;B5 01 00&#10;B9 01 00&#10;BA 01 00&#10;BB 01 00&#10;BC 01 00&#10;BD 01 00&#10;&#10;// SRR Reset&#10;B1 4F 00&#10;B2 4F 00&#10;B3 4F 00&#10;B4 4F 00&#10;B5 4F 00&#10;B9 4F 00&#10;BA 4F 00&#10;BB 4F 00&#10;BC 4F 00&#10;BD 4F 00</Raw></Outgoing>
+Outgoing27=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>//AT Reset &#10;D1 00&#10;D2 00&#10;D3 00&#10;D4 00&#10;D5 00&#10;D9 00&#10;DA 00&#10;DB 00&#10;DC 00&#10;DD 00</Raw></Outgoing>
+Outgoing28=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>// Mute Reset&#10;B1 5E 00&#10;B2 5E 00&#10;B3 5E 00&#10;B4 5E 00&#10;B5 5E 00&#10;&#10;&#10;B9 5E 00&#10;BA 5E 00&#10;BB 5E 00&#10;BC 5E 00&#10;BD 5E 00</Raw></Outgoing>
+Outgoing29=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x2D"/><Value2 num="0x00"/></Simple></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>B1 01 qq&#10;B2 01 qq&#10;B3 01 qq&#10;B4 01 qq&#10;B5 01 qq&#10;B6 01 qq&#10;B7 01 qq&#10;B9 01 qq&#10;BA 01 qq&#10;BB 01 qq&#10;BC 01 qq&#10;BD 01 qq</Raw></Outgoing>
+Outgoing30=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>B0 05 00&#10;B0 06 00&#10;&#10;B1 05 00&#10;B1 06 00</Raw></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>B9 01 qq&#10;BA 01 qq&#10;BB 01 qq</Raw></Outgoing>
+Outgoing5=MID2MIDA00010014Elektron Digitakt IID9io
+Outgoing6=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Simple Type="ChannelPressure"><Channel num="10"/><Value1 var="ip"/></Simple></Outgoing>
+Outgoing7=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>D1 iq&#10;D9 iq</Raw></Outgoing>
+Outgoing8=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>D2 ir&#10;DA ir</Raw></Outgoing>
+Outgoing9=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port></Ports><Raw>B1 4F pp&#10;B2 4F pp&#10;B3 4F pp&#10;B4 4F pp&#10;B5 4F pp&#10;&#10;B9 4F pp&#10;BA 4F pp&#10;BB 4F pp&#10;BC 4F pp&#10;BD 4F pp</Raw></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.5]
+Active=1
+Comments=
+Incoming0=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x29"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x25"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x34"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming13=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming14=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x16"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x08"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x09"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x11"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming6=MID3<Incoming Action="MIDI"><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x03"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x14"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming8=MID2MIDA0001000ELCXL3 1 MIDI 1B01Epp
+Incoming9=MID2MIDA0001000ELCXL3 1 MIDI 1B01Dpp
+Name=Vocals
+Name0=Vocal Selector
+Name1=Vocal Mute
+Name10=Kill DJ Filter DT
+Name11=Kill All Vocals
+Name12=Kill All Vocals Mutes
+Name13=Kill All Vocals AT
+Name14=Led FB AT Killer Vocals
+Name2=Vocal MW
+Name3=Vocal A AT
+Name4=Vocal B AT
+Name5=SRR Vocal
+Name6=Vocal All MW
+Name7=Wash Vocal
+Name8=DJ LP Vocal
+Name9=DJ HP Vocal
+Options0=Actv01Stop00OutO00StMa00000002ye=pplabel0006__cmt>
+Options1=Actv01Stop00OutO00StMa00000002qq=pplabel0006__cmt>
+Options10=Actv01Stop00OutO00StMa00000001if(ye==127)noexecute
+Options11=Actv01Stop00OutO00StMa00000002if(ye==127)noexecutelabel0006__cmt>
+Options12=Actv01Stop00OutO00StMa00000002if(ye==127)noexecuteif(yg==127)noexecute
+Options13=Actv01Stop00OutO00StMa00000002if(ye==127)noexecuteif(yf==127)noexecute
+Options14=Actv01Stop00OutO00StMa00000002if(yf==127)noexecuteif(ye==127)noexecute
+Options2=Actv01Stop00OutO00StMa00000001qq=pp
+Options3=Actv01Stop00OutO00StMa00000005is=ppzs=1label0006__cmt>label0006__cmt>label0006__cmt>
+Options4=Actv01Stop00OutO00StMa00000002it=ppzt=1
+Options5=Actv01Stop00OutO00StMa00000001if(ye==127)noexecute
+Options6=Actv01Stop00OutO00StMa00000001if(ye==127)noexecute
+Options7=Actv01Stop00OutO00StMa00000001if(ye==127)noexecute
+Options8=Actv01Stop00OutO00StMa00000004if(ye==127)noexecuteie=ppze=1label0006__cmt>
+Options9=Actv01Stop00OutO00StMa00000003if(ye==127)noexecuteif=ppzf=1
+Outgoing0=None
+Outgoing1=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>BC 5E qq&#10;BD 5E qq</Raw></Outgoing>
+Outgoing10=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//DJ FILTER LPF&#10;BC 1A 00&#10;BD 1A 00&#10;&#10;//DJ FILTER HPF&#10;BC 1B 7F&#10;BD 1B 7F</Raw></Outgoing>
+Outgoing11=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//DJ FILTER LPF&#10;BC 1B 7F&#10;BD 1B 7F&#10;&#10;&#10;//DJ FILTER HPF&#10;&#10;BC 1A 00&#10;BC 1A 00&#10;&#10;//BC Reset&#10;&#10;BC 02 00&#10;BD 02 00&#10;&#10;// MW Reset&#10;&#10;BC 01 00&#10;BD 01 00&#10;&#10;// SRR Reset&#10;BC 37 00&#10;BD 37 00</Raw></Outgoing>
+Outgoing12=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>// Mute Reset&#10;&#10;BC 5E 00&#10;BD 5E 00</Raw></Outgoing>
+Outgoing13=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>// AT Reset&#10;DC 00&#10;DD 00</Raw></Outgoing>
+Outgoing14=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>B0 08 00&#10;B1 09 00</Raw></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>BC 01 qq&#10;BD 01 qq</Raw></Outgoing>
+Outgoing3=MID2MIDA00010014Elektron Digitakt IIDCis
+Outgoing4=MID1DDit
+Outgoing5=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>BC 37 pp&#10;BD 37 pp</Raw></Outgoing>
+Outgoing6=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>BC 01 pp&#10;BD 01 pp</Raw></Outgoing>
+Outgoing7=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitone II</Port><Port>Elektron Digitakt II</Port></Ports><Raw>BC 02 pp&#10;BD 02 pp</Raw></Outgoing>
+Outgoing8=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>BC 1B ie&#10;BD 1B ie</Raw></Outgoing>
+Outgoing9=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port></Ports><Raw>//Vocals&#10;BC 1A if&#10;BD 1A if</Raw></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.6]
+Active=1
+Comments=
+Incoming0=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x19"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x1A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming10=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x1C"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming11=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1C"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming12=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1C"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming13=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x18"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming14=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x18"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming15=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming16=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x1B"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID2MIDA0001000ELCXL3 1 MIDI 1B01Cpp
+Incoming4=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x19"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1A"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming6=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1B"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming7=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="1"/><Value1 num="0x1C"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming8=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x18"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming9=MID3<Incoming Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x18"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Name=Delay & Reverb
+Name0=Reverb Size
+Name1=Reverb HPF
+Name10=Feedback REV CC28 to CC25 & 27
+Name11=Feedback DEL OPEN to FB LED
+Name12=Feedback DEL OPEN to HPF
+Name13=Feedback Opener To REV
+Name14=Feedback Opener To DEL
+Name15=KILL Del & Rev
+Name16=Kill Led FB
+Name2=Reverb LPF
+Name3=Rev Open
+Name4=Delay Feedback
+Name5=Delay HPF
+Name6=Delay LPF
+Name7=Del Open
+Name8=FX Open
+Name9=Feedback FX Opener to LCXL
+Options0=Actv01Stop00OutO00StMa00000002gm=pplabel001E__cmt>//pp est entre 20 et 105
+Options1=Actv01Stop00OutO00StMa00000002gn=pplabel0006__cmt>
+Options10=Actv01Stop00OutO00
+Options11=Actv01Stop00OutO00
+Options12=Actv01Stop00OutO00
+Options13=Actv01Stop00OutO00
+Options14=Actv01Stop00OutO00StMa00000001label0006__cmt>
+Options15=Actv01Stop00OutO00
+Options16=Actv01Stop00OutO00
+Options2=Actv01Stop00OutO00StMa00000001go=pp
+Options3=Actv01Stop00OutO00StMa00000017label0006__cmt>label000F__cmt>// Reverblabel0013__cmt>//Reverb Sizege=30gu=ge*ppgu=gu/127gu=gu+gmif(gu<21)gu=21if(gu>110)gu=110label0006__cmt>label0012__cmt>//LPF Reverbgh=25gi=gh*ppgi=gi/127gt=go+giif(gt<35)gt=35if(gt>90)gt=90label0006__cmt>label0012__cmt>//HPF Reverblabel000D__cmt>//gz=15gw=gz*ppgw=gw/127gw=gn+gw
+Options4=Actv01Stop00OutO00StMa00000001gj=pp
+Options5=Actv01Stop00OutO00StMa00000001gk=pp
+Options6=Actv01Stop00OutO00StMa00000001gl=pp
+Options7=Actv01Stop00OutO00StMa00000019label0006__cmt>label000D__cmt>//DELAYlabel0010__cmt>//FEEDBACKlabel0034__cmt>//ga = la valeur rajoutée a la valeur de basega=15label002D__cmt>// Échelle selon la position du potardgq=pp*gagq=gq/127gq=gq+gjif(gq>61)gq=61label0006__cmt>label000B__cmt>//HPFlabel0035__cmt>// gb = la valeur rajoutée a la valeur de basegb=15gr=pp*gbgr=gr/127gr=gr+gkif(gr>100)gr=100label0006__cmt>label000B__cmt>//LPFlabel0034__cmt>//gc = la valeur rajoutée a la valeur de basegc=25gs=pp*gcgs=gs/127gs=gs+gl
+Options8=Actv01Stop00OutO00StMa0000002Elabel000F__cmt>// REVERBlabel0013__cmt>//Reverb Sizelabel000D__cmt>//ge=15gu=ge*ppgu=gu/127gu=gu+gmif(gu<21)gu=21if(gu>110)gu=110label0006__cmt>label0012__cmt>//LPF Reverbgh=25gi=gh*ppgi=gi/127gt=go+giif(gt<35)gt=35if(gt>90)gt=90label0006__cmt>label0012__cmt>//HPF Reverbgz=15gw=gz*ppgw=gw/127gw=gn+gwlabel0006__cmt>label0006__cmt>label000D__cmt>//DELAYlabel0010__cmt>//FEEDBACKga=15gq=pp*gagq=gq/127gq=gj+gqif(gq>61)gq=61label0006__cmt>label000B__cmt>//HPFlabel0006__cmt>gb=15gr=pp*gbgr=gr/127gr=gr+gkif(gr>100)gr=100label0006__cmt>label000B__cmt>//LPFgc=25gs=pp*gcgs=gs/127gs=gs+gllabel0006__cmt>
+Options9=Actv01Stop00OutO00
+Outgoing0=MID2MIDA00020014Elektron Digitakt II0014Elektron Digitone IIBE1Egm
+Outgoing1=MID2MIDA00020014Elektron Digitakt II0014Elektron Digitone IIBE5Agn
+Outgoing10=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>B0 19 gu&#10;B0 1B gt&#10;B0 1A gw</Raw></Outgoing>
+Outgoing11=MID2MIDA0001000ELCXL3 1 MIDI 1B119gq
+Outgoing12=MID2MIDA0001000ELCXL3 1 MIDI 1B11Agr
+Outgoing13=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>B0 19 gu&#10;B0 1B gt</Raw></Outgoing>
+Outgoing14=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>//Del Led&#10;B1 19 gq&#10;B1  1A gr</Raw></Outgoing>
+Outgoing15=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port><Port>Elektron Digitone II</Port></Ports><Raw>//Delay&#10;//Feedback&#10;BE 18 gj&#10;//HPF&#10;BE 19 gk&#10;//LPF&#10;BE 1A gl&#10;&#10;&#10;//Reverb&#10;//SIZE&#10;BE 1E gm&#10;//HPF&#10;BE 5A gn&#10;//LPF&#10;BE 5B go</Raw></Outgoing>
+Outgoing16=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>B0 1C 00&#10;B1 1C 00</Raw></Outgoing>
+Outgoing2=MID2MIDA00020014Elektron Digitakt II0014Elektron Digitone IIBE5Bgo
+Outgoing3=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port><Port>Elektron Digitone II</Port></Ports><Raw>//Reverb&#10;//SIZE&#10;BE 1E gu&#10;//LPF&#10;BE 5B gt&#10;//HPF&#10;BE 5A gw</Raw></Outgoing>
+Outgoing4=MID2MIDA00020014Elektron Digitakt II0014Elektron Digitone IIBE18gj
+Outgoing5=MID2MIDA00020014Elektron Digitakt II0014Elektron Digitone IIBE19gk
+Outgoing6=MID2MIDA00020014Elektron Digitakt II0014Elektron Digitone IIBE1Agl
+Outgoing7=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port><Port>Elektron Digitone II</Port></Ports><Raw>//Delay&#10;//Feedback&#10;BE 18 gq&#10;//HPF&#10;BE 19 gr&#10;//LPF&#10;BE 1A gs</Raw></Outgoing>
+Outgoing8=MID3<Outgoing Action="MIDI"><Ports><Port>Elektron Digitakt II</Port><Port>Elektron Digitone II</Port></Ports><Raw>//Reverb&#10;//SIZE&#10;BE 1E gu&#10;//LPF&#10;BE 5B gt&#10;//HPF&#10;BE 5A gw&#10;&#10;//Delay&#10;//Feedback&#10;BE 18 gq&#10;//HPF&#10;BE 19 gr&#10;//LPF&#10;BE 1A gs</Raw></Outgoing>
+Outgoing9=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>// Rev Led &#10;//Open Led&#10;B0 1C pp&#10;//Size Led&#10;B0 19 gm&#10;// HPF Led&#10;B0 1A gn&#10;//LPF Led&#10;B0 1B go&#10;&#10;&#10;//Del Led&#10;//Open Led&#10;B1 1C pp&#10;//Feedback&#10;B1 1B gj&#10;//HPF&#10;B1 1A gk&#10;//LPF&#10;B1 1B gl</Raw></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.7]
+Active=1
+Comments=
+DefaultOutPorts=MIDA0001000ELCXL3 1 MIDI 1
+Incoming0=MID3<Incoming Action="MIDI"><Description>Selector Reset Rouge</Description><Ports><Port>LCXL3 1 MIDI 1</Port><Port>LCXL3 1 MIDI 2</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x28"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Description>DJ Kill Rose</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x34"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming10=MID3<Incoming Action="MIDI"><Description>AT All Yellow</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x03"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming11=MID3<Incoming Action="MIDI"><Description>AT All Yellow</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x03"/><Value2 var="qq" Type="SetVar"/></Simple></Incoming>
+Incoming12=MID3<Incoming Action="MIDI"><Description>AT All Yellow</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x03"/><Value2 var="qq" Type="SetVar"/></Simple></Incoming>
+Incoming2=MID3<Incoming Action="MIDI"><Description>DJ Kill Rose</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x34"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming3=MID3<Incoming Action="MIDI"><Description>Kill All Rouge</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming4=MID3<Incoming Action="MIDI"><Description>Kill All Rouge</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming5=MID3<Incoming Action="MIDI"><Description>Kill All Rouge</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Incoming6=MID3<Incoming Action="MIDI"><Description>Kill All Rouge</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 var="qq" Type="SetVar"/></Simple></Incoming>
+Incoming7=MID3<Incoming Action="MIDI"><Description>Kill All Rouge</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming8=MID3<Incoming Action="MIDI"><Description>Kill All Rouge</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 var="pp" Type="SetVar"/></Simple></Incoming>
+Incoming9=MID3<Incoming Action="MIDI"><Description>Kill All Rouge</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x36"/><Value2 num="0x7F"/></Simple></Incoming>
+Name=Led Feedback
+Name0=Selector Reset Led
+Name1=Feedback Led DJ Kill
+Name10=Feedback AT All - Synth
+Name11=Feedback AT All - Bass
+Name12=Feedback AT All  Vocal Only
+Name2=Feedback Led DJ Kill Drums Only
+Name3=SRR All Feedback
+Name4=MW All Feedback
+Name5=AT All Feedback Kill
+Name6=Wash Up Feedback Led
+Name7=Feedback Led Drum Filter Kill All
+Name8=Feedback Led DJ Kill All
+Name9=Led Feedback Kill All Vocal
+Options0=Actv01Stop00OutO00
+Options1=Actv01Stop00OutO00
+Options10=Actv00Stop00OutO00StMa00000002if(yf==127)skipif(yd==127)noexecute
+Options11=Actv00Stop00OutO00StMa00000002if(yf==127)skipif(yb==127)noexecute
+Options12=Actv00Stop00OutO00StMa00000002if(yf==127)skipif(ye==127)noexecute
+Options2=Actv01Stop00OutO00StMa00000003label003D__cmt>//là pour le feedback si drums sont exclus du selectorlabel0006__cmt>if(yc==127)noexecute
+Options3=Actv01Stop00OutO00
+Options4=Actv01Stop00OutO00
+Options5=Actv01Stop00OutO00StMa00000001if(yf==127)noexecute
+Options6=Actv01Stop00OutO00
+Options7=Actv01Stop00OutO00StMa00000001if(yc==127)noexecute
+Options8=Actv01Stop00OutO00
+Options9=Actv01Stop00OutO00StMa00000002if(ye==127)noexecuteif(yg==127)noexecute
+Outgoing0=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>//Kick Toggle&#10;B1 25 00&#10;//Bass Toggle&#10;B1 26 00&#10;//Drums Toggle&#10;B1 27 00&#10;//Synth Toggle&#10;B1 28 00&#10;//Vocal Toggle&#10;B1 29 00&#10;//Filter Toggle&#10;B0 26 00&#10;//Mute Toggle&#10;B0 27 00</Raw></Outgoing>
+Outgoing1=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>B0 1E 7F&#10;B0 1D 00</Raw></Outgoing>
+Outgoing10=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>B1 05 pp&#10;B1 06 pp&#10;B0 05 pp&#10;B0 06 pp</Raw></Outgoing>
+Outgoing11=MID2MIDA0001000ELCXL3 1 MIDI 1B004pp
+Outgoing12=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>B0 08 pp&#10;B1 09 pp</Raw></Outgoing>
+Outgoing2=MID3<Outgoing Action="MIDI"><Description>N'applique le feedback que sur le DJ all si drums exclus</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>// Drum Filter&#10;B0 12 00&#10;B0 13 7F</Raw></Outgoing>
+Outgoing3=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x11"/><Value2 num="0x00"/></Simple></Outgoing>
+Outgoing4=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x01"/><Value2 num="0x00"/></Simple></Outgoing>
+Outgoing5=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x03"/><Value2 num="0x00"/></Simple></Outgoing>
+Outgoing6=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>// LED BLANCHE&#10;B0 14 00</Raw></Outgoing>
+Outgoing7=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>// Drum Filter&#10;B0 12 00&#10;B0 13 7F</Raw></Outgoing>
+Outgoing8=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Raw>B0 1E 7F&#10;B0 1D 00</Raw></Outgoing>
+Outgoing9=MID3<Outgoing Action="MIDI"><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x25"/><Value2 num="0x00"/></Simple></Outgoing>
+PresetSwitchIgnore=0
+
+[Preset.8]
+Active=1
+Comments=
+Incoming0=MID3<Incoming Action="MIDI"><Description>Reset Selector Rouge</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x28"/><Value2 num="0x7F"/></Simple></Incoming>
+Name=Selectors Reset
+Name0=Selector Reset
+Options0=Actv01Stop00OutO00StMa00000007ya=0yb=0yc=0yd=0ye=0if=0ig=0
+Outgoing0=None
+PresetSwitchIgnore=0
+
+[Preset.9]
+Active=1
+Comments=
+Incoming0=MID3<Incoming Action="MIDI"><Description>Toggle Filter Blanc</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x26"/><Value2 var="qq" Type="SetVar"/></Simple></Incoming>
+Incoming1=MID3<Incoming Action="MIDI"><Description>Toggle Filter Orange</Description><Ports><Port>LCXL3 1 MIDI 1</Port></Ports><Simple Type="ControlChange"><Channel num="0"/><Value1 num="0x27"/><Value2 var="qq" Type="SetVar"/></Simple></Incoming>
+Name=Filter & Mute Toggle
+Name0=Toggle Filter
+Name1=Toggle Mute
+Options0=Actv01Stop00OutO00StMa00000001yf=qq
+Options1=Actv01Stop00OutO00StMa00000001yg=qq
+Outgoing0=None
+Outgoing1=None
+PresetSwitchIgnore=0
+
+[Project]
+Comments=Goatesque\n
+DefaultInPorts=MIDA00050008USB-MIDI000ELCXL3 1 MIDI 1000DBaum State In0014Elektron Digitone II0014Elektron Digitakt II
+DefaultOutPorts=MIDA0004000ELCXL3 1 MIDI 1000EBaum State Out0014Elektron Digitone II0014Elektron Digitakt II
+Version=2
+
+[Signatures]
+SigName-1=[Midi Translator Pro Internal]
+Signature-1=D/wQgEEnuUOoSWbGvRCKUtUPfjwm4WCzI+N3s/qmxSvKlkdEcF44BxlDOTloDqacPuVyVpDxuj79mZ1hT29Xtcx0lUEmdpb475V5hvPnJWouMmBxLSs+UsTobz+9wFtwdnN//BweWDOiq1IhnZVA+UraxVyKljojQ9adzrzv/bY=
+SignedBy-1=Emile Martin
+
